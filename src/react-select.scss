@@ -1,0 +1,69 @@
+.custom-select {
+    &__control {
+        background-color: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        border-bottom: 1px solid #66676e !important;
+        box-shadow: none !important;
+
+        &--menu-is-open {
+            border-color: #e42c64 !important;
+        }
+    }
+
+    &__value-container {
+        padding: 0 !important;
+        cursor: text !important;
+    }
+
+    &__input-container {
+        color: #999aa5 !important;
+    }
+
+    &__input-separator {
+        display: none !important;
+    }
+
+    &__indicators {
+        cursor: pointer !important;
+    }
+
+    &__indicator {
+        color: #66676e !important;
+
+        &:hover {
+            color: #999aa5 !important;
+        }
+    }
+
+    &__multi-value {
+        background-color: rgba(#999aa5, 0.6) !important;
+        border-radius: 0.5rem !important;
+    }
+
+    &__multi-value__label {
+        font-size: 80% !important;
+        color: rgba(white, 0.7) !important;
+    } 
+    &__multi-value__remove {
+        color: rgba(white, 0.8) !important;
+
+        &:hover {
+            background-color: transparent !important;
+            color: white !important;
+        }
+    }
+
+    &__menu {
+        background-color: #292a2e !important;
+        color: rgba(white, 0.6) !important;
+    }
+
+    &__option {
+        cursor: pointer !important;
+
+        &--is-focused {
+            background-color: lighten($color: #292a2e, $amount: 8%) !important;
+        }
+    }
+}

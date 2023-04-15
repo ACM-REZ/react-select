@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { MultiSelect } from "./MultiSelect";
+import { SingleSelect } from "./SingleSelect";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+   return (
+    <div className='bg-zinc-900 h-screen'>
+      <div className='mx-auto container relative pt-3'>
+        <p className="bg-slate-400 w-1/5 text-white py-2 text-2xl mx-auto text-center rounded-lg">
+          Please pick options:
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <SingleSelect/>
+        <MultiSelect/>
+      </div>
     </div>
   );
 }
